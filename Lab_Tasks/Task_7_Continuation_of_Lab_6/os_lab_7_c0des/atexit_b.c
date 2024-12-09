@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void) {
+void f1(void), f2(void), f3(void);
+atexit(f1);
+atexit(f2);
+atexit(f3);
+printf("Getting ready to exit\n");
+
+}
+void f1(void) {
+printf("In f1\n");
+
+}
+void f2(void) {
+printf("In f2\n");
+
+}
+void f3(void) {
+printf("In f3\n");
+exit(0);
+exit(0);
+printf("This line should not execute\n");
+ }
+ 
